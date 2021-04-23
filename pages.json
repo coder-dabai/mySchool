@@ -1,0 +1,120 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh":true
+			}
+		},{
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "闲置物品",
+				"app-plus":{
+				            "bounce":"none" ,// 将回弹属性关掉
+							"scrollIndicator": "none"
+				        }
+			}
+		},{
+			"path":"pages/goodsdetail/goodsdetail",
+			"style":{
+				"navigationBarTitleText":"物品详情"
+			}
+		},{
+			"path":"pages/selectgoods/selectgoods",
+			"style":{
+				"navigationBarTitleText":"搜索结果"
+			}
+		},{
+			"path": "pages/publish/publish",
+			"style": {
+				"navigationBarTitleText": "发布"
+			}
+		},{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},{
+			"path":"pages/msgdetail/msgdetail",
+			"style":{
+				"navigationBarTitleText":"消息详情"
+			}
+		},{
+			"path":"pages/mine/mymsgs/mymsgs",
+			"style":{
+				"navigationBarTitleText":"我的说说"
+			}
+		},{
+			"path":"pages/mine/mygoods/mygoods",
+			"style":{
+				"navigationBarTitleText":"我的闲置"
+			}
+		},{
+			"path":"pages/publish/publish-goods/publish-goods",
+			"style":{
+				"navigationBarTitleText":"发布闲置"
+			}
+		},{
+			"path":"pages/publish/publish-msg/publish-msg",
+			"style":{
+				"navigationBarTitleText":"发布说说"
+			}
+		},{
+			"path":"pages/mine/editInfo/editInfo",
+			"style":{
+				"navigationBarTitleText":"修改信息"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		
+	},
+	"tabBar": {
+				"color": "#999",
+				"selectedColor": "#ff2a4d",
+				"backgroundColor": "#fafafa",
+				"borderStyle": "black",
+				"position": "bottom",
+				"list": [{
+						"pagePath": "pages/index/index",
+						"text": "首页",
+						"iconPath": "/static/tabbar/index.png",
+						"selectedIconPath": "/static/tabbar/index-s.png"
+					},
+					{
+						"pagePath": "pages/shop/shop",
+						"text": "闲置",
+						"iconPath": "/static/tabbar/shop.png",
+						"selectedIconPath": "/static/tabbar/shop-s.png"
+					},
+					{
+						"pagePath": "pages/publish/publish",
+						"text": "发布",
+						"iconPath": "/static/tabbar/publish.png",
+						"selectedIconPath": "/static/tabbar/publish-s.png"
+					},
+					{
+						"pagePath": "pages/mine/mine",
+						"text": "我的",
+						"iconPath": "/static/tabbar/mine.png",
+						"selectedIconPath": "/static/tabbar/mine-s.png"
+					}
+				]
+			}
+}
